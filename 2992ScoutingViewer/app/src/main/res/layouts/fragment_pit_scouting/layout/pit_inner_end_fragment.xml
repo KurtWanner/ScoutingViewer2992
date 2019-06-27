@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PitScoutingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/endBuddy3Seconds"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/endBuddy3Button"
+                app:layout_constraintTop_toBottomOf="@+id/endBuddy3Button" />
+
+            <CheckBox
+                android:id="@+id/endSoloYesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="256dp"
+                android:layout_marginTop="140dp"
+                android:text="Yes?"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/endBuddyYesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Yes?"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/endSoloYesButton"
+                app:layout_constraintTop_toTopOf="@+id/buddyClimbBlock" />
+
+            <CheckBox
+                android:id="@+id/endBuddy2Button"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Level 2?"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/endBuddyYesButton"
+                app:layout_constraintStart_toStartOf="@+id/endSolo3Seconds" />
+
+            <CheckBox
+                android:id="@+id/endBuddy3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Level 3?"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/endBuddy2Time"
+                app:layout_constraintTop_toBottomOf="@+id/endBuddy2Time" />
+
+            <TextView
+                android:id="@+id/endBuddy2Time"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/endBuddy2Button"
+                app:layout_constraintTop_toBottomOf="@+id/endBuddy2Button" />
+
+            <TextView
+                android:id="@+id/endBuddyHowBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/buddyClimbBlock"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="490dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Can they assist another robot to a HAB platform"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/endSolo3Seconds"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="(Time in seconds)"
+                android:inputType="number"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/endSolo3Button"
+                app:layout_constraintTop_toBottomOf="@+id/endSolo3Button" />
+
+            <TextView
+                android:id="@+id/soloClimbText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Solo Climb"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.134"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/buddyClimbText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="312dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Buddy Climb"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.088"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/soloClimbText" />
+
+            <CheckBox
+                android:id="@+id/endSolo2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="192dp"
+                android:layout_marginTop="24dp"
+                android:text="Level 2?"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/soloClimbText"
+                app:layout_constraintTop_toBottomOf="@+id/soloClimbText" />
+
+            <CheckBox
+                android:id="@+id/endSolo3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Level 3?"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/endSolo2Time"
+                app:layout_constraintTop_toBottomOf="@+id/endSolo2Time" />
+
+            <TextView
+                android:id="@+id/soloClimbBlock"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Can they climb to any other level besides one?"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/soloClimbText"
+                app:layout_constraintTop_toBottomOf="@+id/soloClimbText" />
+
+            <TextView
+                android:id="@+id/endSolo2Time"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="(Time in seconds)"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/endSolo2Button"
+                app:layout_constraintTop_toBottomOf="@+id/endSolo2Button" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="How Do They Do It?"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/endBuddy3Seconds" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

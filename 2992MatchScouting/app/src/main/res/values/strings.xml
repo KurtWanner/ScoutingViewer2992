@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">2992 Match Scouting</string>
+    <string name="action_settings">Exit</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">PreMatch</string>
+    <string name="tab_text_2">SandStorm</string>
+    <string name="tab_text_3">Tele-Op</string>
+    <string name="tab_text_4">Endgame</string>
+    <string name="tab_text_5">Comments</string>
+    <string name="tab_text_6">Submit</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="stop_timer">Stop Timer</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

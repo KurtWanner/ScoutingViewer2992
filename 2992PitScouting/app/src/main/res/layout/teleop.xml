@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Cargo Scoring During Teleop"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teleHatch3Btn" />
+
+    <Spinner
+        android:id="@+id/teleGamePieceSpinner"
+        android:layout_width="254dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorButtonNormal"
+        android:entries="@array/cargo_hatch"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soloClimbText" />
+
+    <Spinner
+        android:id="@+id/teleScoringLocationSpinner"
+        android:layout_width="254dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorButtonNormal"
+        android:entries="@array/field_positions"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buddyClimbText" />
+
+    <TextView
+        android:id="@+id/soloClimbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Preferred Game Piece"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/buddyClimbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Preferred Scoring Location"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teleGamePieceSpinner" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Hatch Scoring During Teleop"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teleScoringLocationSpinner" />
+
+    <Switch
+        android:id="@+id/teleHatchCSBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="CargoShip"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <Switch
+        android:id="@+id/teleHatch1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Rocket 1"
+        app:layout_constraintStart_toEndOf="@+id/teleHatchCSBtn"
+        app:layout_constraintTop_toTopOf="@+id/teleHatchCSBtn" />
+
+    <Switch
+        android:id="@+id/teleHatch2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rocket 2"
+        app:layout_constraintStart_toStartOf="@+id/teleHatch1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/teleHatch1Btn" />
+
+    <Switch
+        android:id="@+id/teleHatch3Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rocket 3"
+        app:layout_constraintStart_toStartOf="@+id/teleHatch2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/teleHatch2Btn" />
+
+    <Switch
+        android:id="@+id/teleCargoCSBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CargoShip"
+        app:layout_constraintStart_toStartOf="@+id/teleHatchCSBtn"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <Switch
+        android:id="@+id/teleCargo1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Rocket 1"
+        app:layout_constraintStart_toEndOf="@+id/teleCargoCSBtn"
+        app:layout_constraintTop_toTopOf="@+id/teleCargoCSBtn" />
+
+    <Switch
+        android:id="@+id/teleCargo2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rocket 2"
+        app:layout_constraintStart_toStartOf="@+id/teleCargo1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/teleCargo1Btn" />
+
+    <Switch
+        android:id="@+id/teleCargo3Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rocket 3"
+        app:layout_constraintStart_toStartOf="@+id/teleCargo2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/teleCargo2Btn" />
+
+
+</android.support.constraint.ConstraintLayout>

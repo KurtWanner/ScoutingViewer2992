@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="starting_platform_strings">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cargo_hatch">
+        <item>No Preference</item>
+        <item>Cargo</item>
+        <item>Hatch</item>
+    </string-array>
+    <string-array name="sandstorm_operation">
+        <item>Manual(Camera)</item>
+        <item>Autonomous</item>
+        <item>No Sandstorm Operation</item>
+    </string-array>
+    <string-array name="all_teams">
+
+    </string-array>
+    <string-array name="field_positions">
+        <item>No Preference</item>
+        <item>CargoShip</item>
+        <item>Rocket</item>
+    </string-array>
+    <string-array name="drive_coach">
+        <item>Student</item>
+        <item>Mentor</item>
+        <item>Mix</item>
+        <item>No Coach</item>
+    </string-array>
+
+
+</resources>

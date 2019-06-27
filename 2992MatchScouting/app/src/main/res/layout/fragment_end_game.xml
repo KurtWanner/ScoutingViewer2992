@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".EndGame">
+
+
+    <Spinner
+        android:id="@+id/end2TeamSpinner"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:spinnerMode="dropdown"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/end1TeamSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/end2TeamText" />
+
+    <TextView
+        android:id="@+id/end2TeamText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Team Number"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/end2TeamSpinner"
+        app:layout_constraintStart_toStartOf="@+id/end2TeamSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/end1TeamSpinner" />
+
+    <TextView
+        android:id="@+id/end2HabText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Hab Level"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/end2HabSpinner"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/end2HabSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/end1HabSpinner" />
+
+    <Spinner
+        android:id="@+id/end2HabSpinner"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/buddyAssistLevels"
+        android:spinnerMode="dropdown"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/end1HabSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/end2HabText" />
+
+    <Spinner
+        android:id="@+id/endHabSpinner"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/endingLocation"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="What Hab Level did the robot end on?"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Were They Assisted By Another Robot?"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/endHabSpinner" />
+
+    <Spinner
+        android:id="@+id/endAssistSpinner"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Buddy Climb"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Did they assist a robot to a Hab platform?"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Time (Seconds)"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/timeText"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/endTimerBtn"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Start Timer"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <CheckBox
+        android:id="@+id/endCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Yes?"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/endHowManyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="How Many Robots?"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endCheckBox" />
+
+    <CheckBox
+        android:id="@+id/end1RoboCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="One"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/endHowManyText"
+        app:layout_constraintTop_toBottomOf="@+id/endHowManyText" />
+
+    <CheckBox
+        android:id="@+id/end2RoboCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Two"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/endHowManyText"
+        app:layout_constraintTop_toBottomOf="@+id/endHowManyText" />
+
+    <Spinner
+        android:id="@+id/end1TeamSpinner"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:spinnerMode="dropdown"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/end1RoboCheck"
+        app:layout_constraintTop_toBottomOf="@+id/end1TeamText" />
+
+    <TextView
+        android:id="@+id/end1TeamText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Team Number"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/end1TeamSpinner"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="@+id/end1TeamSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/end1RoboCheck" />
+
+    <Spinner
+        android:id="@+id/end1HabSpinner"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/buddyAssistLevels"
+        android:spinnerMode="dropdown"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/end2RoboCheck"
+        app:layout_constraintTop_toBottomOf="@+id/end1HabText" />
+
+    <TextView
+        android:id="@+id/end1HabText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Hab Level"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/end1HabSpinner"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/end1HabSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/end2RoboCheck" />
+
+</android.support.constraint.ConstraintLayout>
